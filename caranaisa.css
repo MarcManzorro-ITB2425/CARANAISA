@@ -83,7 +83,7 @@ body {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 60px); /* Altura total menos la cabecera */
-    background: url('image.png') no-repeat center center/cover;
+    background: url('fondo.png') no-repeat center center/cover;
     text-align: center;
     color: #fff;
 }
