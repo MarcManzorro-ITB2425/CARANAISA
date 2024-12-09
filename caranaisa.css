@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-desplegable {
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #000;
+    border: 1px solid #fff;
+    display: none;
+    width: 150px;
+}
+
+.menu-desplegable li {
+    border-bottom: 1px solid #fff;
+}
+
+.menu-desplegable li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+.menu-btn:hover + .menu-desplegable,
+.menu-desplegable:hover {
+    display: block;
+}
+
+/* Contenido principal */
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Altura total menos la cabecera */
+    background: url('image.png') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+.texto-centro {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .cabecera {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .titulo {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    .menu-btn {
+        width: 100%;
+    }
+
+    .menu-desplegable {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+}
