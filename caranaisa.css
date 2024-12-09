@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    padding: 50px 20px;
 }
 
 .logo {
@@ -30,9 +30,16 @@ body {
     text-align: center;
 }
 
-.menu {
-    position: relative;
+
+
+.subtitulo {
+    font-size: 14px;
+    color: #ccc; /* Un color más claro que el título */
+    margin-top: 5px;
 }
+
+
+
 
 .menu-btn {
     background-color: #fff;
